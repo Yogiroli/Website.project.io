@@ -1,0 +1,688 @@
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+      z-index: 100;
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+    color: black;
+    position: fixed;
+    width: 100%;
+  }
+  .navbar.scrolled {
+    background-color: #84202a;
+    box-shadow: 0 2px 7px 0;
+    }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .logo {
+      float: left;
+      align-content: flex-start;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-links li:first-child {
+    margin-left: 0;
+  }
+  .nav-links ul
+  {
+      width: 800px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .fr
+  {
+    border-radius: 100px;
+    background-color: #84202a;
+    padding: 10px 15px 10px 15px;
+  }
+  
+  /* Hero Section styles */
+  .hero {
+    background-image: url(https://collegemilestone.ca/wp-content/uploads/2022/11/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    min-height: 70vh;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+  }
+  
+  .hero h1 {
+      line-height: 1.1;
+    font-size: 100px;
+    margin-top: 15%;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+  }
+  .hero p 
+  {
+      text-align: left;
+      font-size: 20px;
+  }
+  .list
+  {
+      text-align: right;
+      color: white;
+      font-size: 24px;
+      font-weight: 500;
+      position: relative;
+      display: block;
+      width: fit-content;
+      font-family:'Playfair Display', serif;
+      margin-top: -30%;
+      margin-left: 85%;
+  }
+  .list li
+  {
+      font-size: 26px;
+    padding: 5px 0px;
+    width: 250px;
+      color: rgba(235, 235, 235, 0.788);
+    list-style: none;
+    border-top: rgba(255, 255, 255, 0.4) solid;
+    border-bottom: rgba(255, 255, 255, 0.4 solid);
+  }
+  .list li:hover
+  {
+      color: white;
+  }
+  .Portalhero
+  {
+      Border: 1px solid #fff;
+      margin-top: 35px;
+      border-radius: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .Portalhero:hover
+  {
+      background-color: #84202a;
+  }
+  .Portalhero a
+  {
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff; 
+  }
+  /* About Section styles */
+  .about {
+    margin-top: -0;
+    padding: 60px 0;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://collegemilestone.ca/wp-content/uploads/2022/11/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .about h1 {
+    font-size: 110px;
+    color: white;
+    font-weight:500;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .about p
+  {
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 50px;
+  }
+  
+  /* Services Section styles */
+  .services {
+    padding: 60px 0;
+
+  }
+  
+  .services h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+  }
+  
+  .services ul {
+    list-style: none;
+  }
+  
+  .services li {
+    margin-bottom: 10px;
+  }
+  .services.container
+  {
+    width: 95%;
+  }
+  .boxes
+  {
+    max-width: 100%;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
+  .box
+  {
+    border-top: 1px solid grey;
+    width: 25%;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .dir-wrap
+  {
+    display: flex;
+    column-gap: 120px;
+  }
+  .director
+  {
+    padding: 60px 0;
+  }
+
+  .director-description h1
+  {
+    font-size: 58px;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    color: #84202a;
+    padding-bottom: 30px;
+  }
+  .director-description p
+  {
+    font-weight: lighter;
+    padding-bottom: 20px;
+    line-height: 1.88;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .steps /*Margins are set in the html code*/
+  {
+    padding: 60px 0;
+    background-color: #fafafa;
+  }
+  .head h1
+  {
+    font-size: 58px;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    color: #84202a;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .list-steps
+  {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .list-steps ul
+  {
+    width: 100%;
+  }
+  .list-steps li
+  {
+    border-radius: 50px;
+    border: solid 1px #84202a18;
+    padding: 30px;
+    padding-left: 80px;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  .steps .list-steps ul li strong {
+    font-weight: 700;
+    color: #84202a;
+  }
+  .steps .list-steps ul
+  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  
+  .team 
+  {
+    padding: 60px 0;
+    background-color: #84202a;
+    height: 660px;
+  }
+  .team h1
+  { 
+        color: white;
+  }
+  .team p
+  {
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    line-height: 1.88;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    
+  }
+  .team-text
+  {
+    padding-left: 15%;
+    padding-top: 10px;
+    box-shadow: 1px 1px rgb(66, 63, 63);
+  }
+  .team-card
+  {
+    width: fit-content;
+
+  }
+  .team-card p
+  {
+    color: black;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    padding-bottom: 0px;
+  }
+  .team-card h2
+  { 
+   text-align: left;
+   color: #84202a;
+   font-family: 'Playfair Display', serif;
+   font-weight: lighter;
+   font-size: 30px;
+  }
+  .team-card img
+  {
+    width: 492px;
+    border-radius: 20px;
+    max-height: 492px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+
+  * { box-sizing: border-box; }
+
+  body { font-family: sans-serif; }
+  
+  .carousel {
+    background: transparent;
+  }
+  
+  .carousel-cell {
+    margin-right: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  .wrap-campus
+  {
+    margin-top: 500px;
+  }
+  .campus
+  {
+    align-items: center;
+    background-image: url(Images/Campus.jpg);
+    background-repeat: no-repeat;
+    height: fit-content;
+    display: flex;
+  }
+.inner-campus
+{
+  width: 100%;
+  display: flex;
+}
+.campus-text
+{
+  width: 50%;
+}
+.campus-play-button
+{
+  width: 50%;
+
+}
+  .campus-text h1
+  {
+    font-size: 100px;
+    font-weight: lighter;
+    color: white;
+    padding-left: 100px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    padding-bottom: 88px;
+  }
+
+  .campus-text h4
+  {
+    font-size: 26px;
+    padding-top: 55%;
+    line-height: 1;
+    padding-left: 100px;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Contact Section styles */
+  .contact {
+    background-color: #84202a;
+    padding: 60px 0;
+    margin-top: 150px;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+.links-list
+{
+ 
+  display: flex;
+}
+.links-list li
+{
+  list-style-type: none;
+}
+.links-list a
+{
+  font-weight: lighter;
+  color: white;
+  text-transform: none;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+.links-header h1
+{
+  font-weight: lighter;
+  color: white;
+  font-size: 30px;
+  padding-top: 80px;
+  font-family: 'Playfair Display', serif;
+} 
+
+.list-icons li
+{
+list-style-type: none;
+}
+
+.header-contact
+{
+  font-size: 20px;
+}
+.contact-us-footer
+{
+  color: white;
+  padding-left: 20%;
+  font-weight: lighter;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  display: flex;
+}
+.visit-us-footer
+{
+  color: white;
+  padding-left: 10%;
+  font-weight: lighter;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  display: flex;
+}
+.visit-us-footer ul
+{
+  margin-top: 0px;
+}
+.location-margin
+{
+  padding-top: 20px;
+}
+.visit-us-footer ul li
+{
+  list-style-type: none;
+}
+.visit-us-footer img
+{
+  width: 20px;  
+  position: relative;
+}
+.visit-us-footer p
+{
+  display: inline-block;
+  padding-left: 10px;
+}
+.location-footer
+{
+  width: fit-content;
+}
+.social-media-footer
+{
+  padding-top: 45%;
+}
+.social-media-footer h1
+{
+  font-weight: lighter;
+  font-size: 35px;
+}
+.social-list a
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+}
+.social-list ul li
+{
+  display: inline-block;
+  padding: 15px 5px 0px 5px;
+}
+
+.footer-logo 
+{
+  margin-top: 15px;
+}
+.footer-map
+{
+  padding-top: 50px;
+}
+.footer-map iframe
+{
+  border-radius: 10px;
+  width: 100%;
+} 
+.footer-contact p
+{
+  display: inline-block;
+  padding-left: 0px;
+}
+.footer-contact img
+{
+ width: 20px;
+padding-bottom: 30px;
+}
+.footer-contact
+{
+width: fit-content;
+}
+.wrapper-contact
+{
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+}
+.email
+{
+  padding-left: 100px;
+}
+.footer-elements
+{
+  display: flex;
+}
+.contact-us-footer ul
+{
+  padding-top: 20px;
+  line-height: 1.88;
+  list-style-type: none;
+}
+
+  /* Footer styles */
+  .footer {
+    background-color: #84202a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .footer-border
+  {
+    border-top: 1px rgba(255, 255, 255, 0.2) solid;
+    padding-top: 35px;
+  }
+  /* Student Portal Navbar*/
+  .Portal
+{
+	Border: 1px solid #fff;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Portal:hover
+{
+	background-color: #84202a;
+}
+.Portal a
+{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff; 
+}
+.Portal img
+{
+	background-color: transparent;
+	background-size: 25px 25px;
+	height: 22px;
+	padding-left: 20px;
+}
+.Portalnoborder
+{
+
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 40%;
+    margin-top: 40%;
+}
+.Portalnoborder img
+{
+	background-color: transparent;
+	background-size: 100px 100px;
+	height: 150px;
+}
+.Portalnoborder p
+{
+  text-align: center;
+  font-size: 18px;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal-left
+{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal-left.active
+{
+  transform: translateX(0);
+  opacity: 1;
+}
+.reveal-right
+{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal-right.active
+{
+  transform: translateX(0);
+  opacity: 1;
+}
